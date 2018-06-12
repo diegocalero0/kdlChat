@@ -9,7 +9,7 @@ server.listen(process.argv[2], function(){
 
 app.get("/login", function(req, res){
 	var prueba = {"nombre":"diego", "apellido":"calero"};
-	res.json(prueba);
+	res.send(prueba);
 });
 
 app.get("/prueba", function(req, res){
