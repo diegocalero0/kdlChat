@@ -11,3 +11,8 @@ app.get("/login", function(req, res){
 	var prueba = {"nombre":"diego", "apellido":"calero"};
 	res.json();
 });
+
+app.get("/prueba", function(req, res){
+
+	res.send("hola mundo");
+});
