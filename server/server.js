@@ -3,7 +3,7 @@ var app = express();
 var server = require("http").Server(app);
 var io = require("socket.io")(server);
 
-server.listen("8080", function(){
+server.listen(process.argv[2], function(){
 	console.log("Corriendo en el servidor - puerto: 8080");
 });
 
